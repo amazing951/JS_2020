@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+
+<body>
+    <div id="app">
+        <a href="https://www.google.com.tw/" v-on:click.prevent="doThis">有 prevent 的狀況下</a>
+        <br>
+        <a href="https://www.google.com.tw/" v-on:click="doThis">沒有 prevent 的狀況下</a>
+
+    </div>
+
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            methods: {
+                doThis: function () {
+                    alert("TA-DA");
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

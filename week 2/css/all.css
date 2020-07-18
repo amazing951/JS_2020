@@ -1,0 +1,12 @@
+.container #app{
+    display: flex;
+}
+.card{
+    width: 20%;
+    margin: 0 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
