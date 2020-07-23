@@ -33,6 +33,7 @@ new Vue({
       address: '',
       payment: '',
       notes: '',
+      message:'',
     },
     isLoading: false,
     cart: {},
