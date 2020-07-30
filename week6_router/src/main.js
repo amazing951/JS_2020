@@ -7,6 +7,8 @@ import Loading from 'vue-loading-overlay'
 import 'vue-loading-overlay/dist/vue-loading.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import 'bootstrap' // Import js file
+import 'bootstrap/dist/css/bootstrap.min.css' // Import css file
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
