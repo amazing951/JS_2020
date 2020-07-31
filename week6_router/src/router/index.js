@@ -41,7 +41,13 @@ const routes = [
     component: () => import('../views/Dashboard/Dashboard.vue'),
     children: [
       {
+        path: 'products',
+        name: '後台產品頁',
+        component: () => import('../views/Dashboard/BackEndProducts.vue')
+      },
+      {
         path: 'coupons',
+        name: '後台酷碰',
         component: () => import('../views/Dashboard/Coupons.vue')
       }
     ]
