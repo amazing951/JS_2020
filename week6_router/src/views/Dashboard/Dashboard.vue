@@ -6,6 +6,7 @@
       <router-link to="/admin">後台首頁</router-link> |
       <router-link to="/admin/products">產品頁</router-link> |
       <router-link to="/admin/coupons">酷碰</router-link> |
+      <router-link to="/admin/orders">訂單列表</router-link>
     </div>
     <!-- props, 跑非同步，adminSecuss驗證沒問題，才跑下面 -->
     <router-view :token="token" v-if="adminSecuss" />

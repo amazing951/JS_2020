@@ -25,12 +25,17 @@ const routes = [
         component: () => import('../views/Product.vue')
       },
       {
-        path: '/cart',
+        path: 'cart',
         name: '購物車頁',
         component: () => import('../views/Cart.vue')
       },
       {
-        path: '/login',
+        path: 'checkout',
+        name: '結帳',
+        component: () => import('../views/Checkout.vue')
+      },
+      {
+        path: 'login',
         name: '登入頁',
         component: () => import('../views/Login.vue')
       }
@@ -49,6 +54,11 @@ const routes = [
         path: 'coupons',
         name: '後台酷碰',
         component: () => import('../views/Dashboard/Coupons.vue')
+      },
+      {
+        path: 'orders',
+        name: '後台訂單',
+        component: () => import('../views/Dashboard/OrderList.vue')
       }
     ]
   }
